@@ -33,5 +33,7 @@ def divisors(num, primes, with_self=True, with_one=True):
         div.remove(1)
     if not with_self:
         div.remove(num)
+
+    div.sort()
     
     return div
